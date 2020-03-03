@@ -8,3 +8,24 @@ body {
     text-indent: 2em;
     line-height: 1.7em;
 }
+
+#greeting {
+    font-size: 30px;
+}
+
+.quiz {
+    color: rgb(255, 94, 0);
+    font-size: 25px;
+    font-weight: 200;
+}
+
+button {
+    font-size: 25px;
+    color: orange
+}
+
+#answer {
+    font-size: 30px;
+    color:red;
+    
+}
