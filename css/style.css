@@ -1,5 +1,11 @@
 body {
     background-color: rgb(198, 206, 206);
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+
+
+
 }
 .para {
     color: rgb(77, 74, 74);
@@ -7,6 +13,9 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-indent: 2em;
     line-height: 1.7em;
+    padding: thick;
+
+    
 }
 
 #greeting {
