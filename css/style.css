@@ -1,8 +1,52 @@
 body {
+    margin:0;
     background-color: rgb(198, 206, 206);
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
+}
+header {
+    color: rgb(102, 100, 117);
+    background-color: lightgray;
+    padding:3%;
+}
+#main {
+    font-size: 30px;
+    text-align: center;
+}
+#sub {
+    font-size: 20px;
+    text-align: right;
+}
+#greeting {
+    font-size: 20px;
+    text-align: right;
+
+}
+
+
+nav {
+    height:50px;
+    background-color: lightgray;
+}
+#nav {
+    display: inline-block;
+    font-size: 25px;
+    font-weight: 100;
+    width:30%;
+    padding-left: 50px;
+}
+#mainbody {
+    display: inline-block;
+}
+
+#bio{
+    border: brown20px solid;
+    width:60%;
+    float: left;
+
+}
+
+article {
+    padding-left: 10%;
+    padding-right: 10%;
 
 
 
@@ -14,18 +58,30 @@ body {
     text-indent: 2em;
     line-height: 1.7em;
     padding: thick;
-
+    text-align: justify;
     
 }
 
-#greeting {
-    font-size: 30px;
+#jscode {
+    width:40%;
+    margin-left: 60%;
+}
+#codeHere {
+    padding-right: 10%;
 }
 
 .quiz {
-    color: rgb(255, 94, 0);
-    font-size: 25px;
-    font-weight: 200;
+    color: rgb(77, 74, 74);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.7em;
+
+
+}
+#quizTitle{
+    font-size: 20px;
+}
+#quizNote {
+    font-size: 15px;
 }
 
 button {
@@ -34,8 +90,16 @@ button {
 }
 
 #answer {
-    font-size: 25px;
-    color:rgb(173, 153, 153);
+    font-size: 15px;
+    color: rgb(77, 74, 74);
     
 
+}
+
+
+footer {
+    height: 100px;
+    background-color: lightgray;
+    padding-left: 50px;
+    padding-top: 50px;
 }

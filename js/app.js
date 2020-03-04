@@ -26,16 +26,16 @@ function yourName(){
         yourName = prompt('What is your name?');
     }
     inputName = yourName + '!';
-    return inputName;
+    document.getElementById("yourname").innerHTML = inputName ;
 }
 
 
 function quiz(){
 // this is question 1    
-    var q1 = prompt ('Have you ever been to China?');
+    var q1 = prompt('Have you ever been to China?').toLowerCase();
     var a1 ;
     while (q1 !=='y' && q1 !== 'yes' && q1 !== 'n' && q1 !== 'no'){
-        q1 = prompt ('Have you ever been to China?');
+        q1 = prompt ('Have you ever been to China?').toLowerCase();
     }
     if (q1 == 'y' || q1 == 'yes'){
         a1 = 'China changes every day, please visit it again once you got a chance.';
@@ -46,10 +46,10 @@ function quiz(){
     }
 // this is the question 2
 
-    var q2 = prompt ('Have you ever served in the military?');
+    var q2 = prompt ('Have you ever served in the military?').toLowerCase();
     var a2 ;
     while (q2 !=='y' && q2 !== 'yes' && q2 !== 'n' && q2 !== 'no'){
-        q2 = prompt ('Have you ever served in the military?');
+        q2 = prompt ('Have you ever served in the military?').toLowerCase();
     }
     if (q2 == 'y' || q2 == 'yes'){
         a2 = 'Great! Thank you for your service!';
@@ -61,10 +61,10 @@ function quiz(){
 
 // this is question 3
 
-    var q3 = prompt ('Have you ever fixed a helicopter before?');
+    var q3 = prompt ('Have you ever fixed a helicopter before?').toLowerCase();
     var a3 ;
     while (q3 !=='y' && q3 !== 'yes' && q3 !== 'n' && q3 !== 'no'){
-        q3 = prompt ('Have you ever fixed a helicopter before?');
+        q3 = prompt ('Have you ever fixed a helicopter before?').toLowerCase();
     }
     if (q3 == 'y' || q3 == 'yes'){
         a3 = 'Great! Fixing helicopters are fun, right?';
@@ -76,10 +76,10 @@ function quiz(){
  
 // this is question 4
 
-    var q4 = prompt ('Have you ever done a wall painting before?');
+    var q4 = prompt ('Have you ever done a wall painting before?').toLowerCase();
     var a4 ;
     while (q4 !=='y' && q4 !== 'yes' && q4 !== 'n' && q4!== 'no'){
-        q4 = prompt ('Have you ever done a wall painting before?');
+        q4 = prompt ('Have you ever done a wall painting before?').toLowerCase();
     }
     if (q4 == 'y' || q4 == 'yes'){
         a4 = "Aww, it's not as easy as we thought, right?";
@@ -91,10 +91,10 @@ function quiz(){
   
 // this is question 5
 
-    var q5 = prompt ('Do you have kids?');
+    var q5 = prompt ('Do you have kids?').toLowerCase();
     var a5 ;
     while (q5 !=='y' && q5 !== 'yes' && q5 !== 'n' && q5!== 'no'){
-        q5 = prompt ('Do you have kids?');
+        q5 = prompt ('Do you have kids?').toLowerCase();
     }
     if (q5 == 'y' || q5 == 'yes'){
         a5 = 'Sometimes dealing with kid could be tough, right?';
@@ -104,7 +104,7 @@ function quiz(){
         alert (a5);
     }
 
-    document.getElementById("answer").innerHTML = a1 + "<br><br>" + a2 + "<br><br>" + a3 +"<br><br>" + a4 + "<br><br>" + a5 + "<br><br>";
+    document.getElementById("answer").innerHTML = a1 + "<br>" + a2 + "<br>" + a3 +"<br>" + a4 + "<br>" + a5 + "<br>";
 
 
 }
