@@ -39,8 +39,10 @@ function quiz(){
     }
     if (q1 == 'y' || q1 == 'yes'){
         a1 = 'China changes every day, please visit it again once you got a chance.';
+        alert (a1);
     }    else if (q1 == 'no' || q1 == 'n'){
         a1 = "Please visit China when you got a chance, you won't regred it!";
+        alert (a1);
     }
 // this is the question 2
 
@@ -51,8 +53,10 @@ function quiz(){
     }
     if (q2 == 'y' || q2 == 'yes'){
         a2 = 'Great! Thank you for your service!';
+        alert (a2);
     }    else if (q2 == 'no' || q2 == 'n'){
         a2 = 'Military experience is amazing!';
+        alert (a2);
     }
 
 // this is question 3
@@ -64,8 +68,10 @@ function quiz(){
     }
     if (q3 == 'y' || q3 == 'yes'){
         a3 = 'Great! Fixing helicopters are fun, right?';
+        alert (a3);
     }    else if (q3 == 'no' || q3 == 'n'){
         a3 = 'No worrys, working on a helicopter feels no different than a lawn mower!';
+        alert (a3);
     }
  
 // this is question 4
@@ -77,8 +83,10 @@ function quiz(){
     }
     if (q4 == 'y' || q4 == 'yes'){
         a4 = "Aww, it's not as easy as we thought, right?";
+        alert (a4);
     }    else if (q4 == 'no' || q4 == 'n'){
         a4 = "You gotta give a try, it's so interesting";
+        alert (a4);
     }
   
 // this is question 5
@@ -90,11 +98,13 @@ function quiz(){
     }
     if (q5 == 'y' || q5 == 'yes'){
         a5 = 'Sometimes dealing with kid could be tough, right?';
+        alert (a5);
     }    else if (q5 == 'no' || q5 == 'n'){
         a5 = 'Enjoy your life as hard as you could! Once you got kid, it will change a lot!';
+        alert (a5);
     }
 
-    document.getElementById("answer").innerHTML = a1 + "<br>" + a2 + "<br>" + a3 +"<br>" + a4 + "<br>" + a5 + "<br>";
+    document.getElementById("answer").innerHTML = a1 + "<br><br>" + a2 + "<br><br>" + a3 +"<br><br>" + a4 + "<br><br>" + a5 + "<br><br>";
 
 
 }
