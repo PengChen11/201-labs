@@ -108,3 +108,30 @@ function quiz(){
 
 
 }
+
+
+//the following is the number guessing game:
+function numGuess(){
+    var guessNum = prompt("Let's play a number guessing game. You will have total of 4 chances to guess it. Please input a number.");
+    var myNum = 11;
+        for (var i=0; i<4; i++){
+            while ( isNaN(guessNum) ){
+                guessNum = prompt('Invalid Input. Please guess a number');
+            }
+            var realNum = Number(guessNum);
+            if (realNum > myNum && i < 3){
+                alert('Your guess number is too high!');
+                guessNum = prompt ('Please guess another number');
+            } else if(realNum < myNum && i < 3){
+                alert('Your guess number is too low!');
+                guessNum = prompt ('Please guess another number');
+            } else if (realNum === myNum){
+                alert("Unbelievable!! You guessed it!!");
+                document.getElementById("numberGame").innerHTML = 'Unbelievable!! You guessed it!!!' + '<br>';
+                break;
+            } else if (i===3){
+                document.getElementById("numberGame").innerHTML = "Sorry, all 4 chances are used and you still don't have it! LOL!" + '<br>';
+            }
+        }
+}
+

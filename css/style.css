@@ -61,6 +61,15 @@ article {
     text-align: justify;
     
 }
+.top10 {
+    color: rgb(83, 11, 11);
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.7em;
+    padding: thick;
+    text-align: justify;
+
+}
 
 #jscode {
     width:40%;
@@ -85,8 +94,9 @@ article {
 }
 
 button {
-    font-size: 25px;
-    color: orange
+    font-size: 20px;
+    color: orange;
+    width:80%;
 }
 
 #answer {
