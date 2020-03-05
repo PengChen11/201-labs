@@ -1,6 +1,8 @@
 /* eslint-disable indent */
 'use strict';
 var score = 0;
+var inputName;
+
 
 function greetings(){
     var today = new Date();
@@ -22,7 +24,6 @@ function greetings(){
 
 function yourName(){
     var yourName = prompt('What is your name?');
-    var inputName;
     while (yourName == '') {
         yourName = prompt('What is your name?');
     }
@@ -165,7 +166,7 @@ function question7(){
 }
 
 function showMyscore(){
-    document.getElementById("answer").innerHTML = 'Your final score is ' + Math.floor(score/7*100) +"%." + "<br>";
+    document.getElementById("answer").innerHTML = inputName + 'Your final score is ' + Math.floor(score/7*100) +"%." + "<br>";
 }
 
 

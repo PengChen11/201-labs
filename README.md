@@ -2,6 +2,13 @@
 
 This is a Code Fellows 201 class project.
 
+## Updates
+
+- lab-02  
+  Created Bio, listed 5 questions only take "yes" or "no" as response and return answers.
+- lab-03  
+  Added two more questions, created buttons for each question and redisigned the layout of the page.
+
 <!-- ## Code Example
 
 Show what the library does as concisely as possible, developers should be able to figure out **how** your project solves their problem by looking at the code example. Make sure the API you are showing off is obvious, and that your code is short and concise.

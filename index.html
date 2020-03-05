@@ -9,27 +9,29 @@
     <script src="js/app.js"></script>
 </head>
 <body>
-    <header>
-        <h1 id="main">Code Fellows class 201 labs</h1>
-        <h2 id="sub">Created and maintened by Peng Chen</h2>
-        <br>
-        <div id="greeting">
-            <p style="float:right;">
-                <script>document.write( greetings() )</script>
-            </p>
-            <p id="yourname" style="float:right;" ></p>
-        </div>
-    </header>
-    <nav>
-        <ul id="nav">
-            <li>Things about me</li>
-        </ul>
-    </nav>
+    <div id="top">
+        <header>
+            <h1 id="main">Code Fellows class 201 labs</h1>
+            <h2 id="sub">Created and maintened by Peng Chen</h2>
+            <br>
+            <div id="greeting">
+                <p style="float:right;">
+                    <script>document.write( greetings() )</script>
+                </p>
+                <p id="yourname" style="float:right;" ></p>
+            </div>
+        </header>
+        <nav>
+            <ul id="nav">
+                <li>Things about me</li>
+            </ul>
+        </nav>
+    </div>
     <div id="mainbody">
         <section id="bio">
             <article>
-                <p>
-                    <img src="img/me.jpg" style="float:left;width:40%;height: auto;padding:thick;" >
+                <p class="pic">
+                    <img src="img/me.jpg" style="float:left;width:40%;height: auto;padding:thick;padding:10px;" >
                 </p> 
                 <p class="para">
                     Hi my name is Peng. My superpowers are learning new things and fixing technical and business
@@ -54,8 +56,8 @@
                      for the liberation of Mosul city in 2017. My work included working 13 hour days, 6 days a
                       week, completely disassembling, inspecting, and reassembling Apache aircraft.<br>
                 </p>
-                <p>
-                    <img src="img/apache.jpg" style="float:right;width:40%;height: auto;">
+                <p class="pic">
+                    <img src="img/apache.jpg" style="float:right;width:40%;height: auto;padding:10px;">
                 </p> 
                 <p class="para">
                     When I returned from Iraq, I was offered the opportunity to work as a system admin to 
@@ -77,10 +79,9 @@
                      fix my dad’s cars, fix laptops, edit movies, and painting on the wall to make my kid happy. <br>
                 </p>
                 <p id=bottomImg>
-                    <img src="img/kid.jpg" style="float:left;width:50%;height: auto;">
-                    <img src="img/wk.jpg" style="float:left;width:50%;height: auto;">
+                    <img src="img/kid.jpg" style="float:left;width:50%;height: auto;padding-bottom: 25px;">
+                    <img src="img/wk.jpg" style="float:left;width:50%;height: auto;padding-bottom: 25px;">
                 </p>
-                <br>
                 <p class="top10">My top 10 favorite movies</p>
                 <ul class="top10">
                     <li>黑客帝国</li>
@@ -164,7 +165,7 @@
                     <button onclick="showMyscore()" style="color:red;">Click here to see your total score.</button>
                     <br>
                     <p id="numberGame"></p>
-                    <p id="answer" style="color: red;font-size: 30px;"></p>
+                    <p id="answer"></p>
     
                 </section>
 
