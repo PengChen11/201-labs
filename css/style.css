@@ -91,6 +91,13 @@ article {
 }
 #quizTitle{
     font-size: 20px;
+    padding-top:10px;
+    
+}
+#questions {
+    width:90%;
+    text-align:justify;
+    font-size: 16px;
 }
 #quizNote {
     font-size: 15px;
@@ -101,6 +108,7 @@ button {
     color: orange;
     width:80%;
 }
+
 
 #answer {
     font-size: 15px;
