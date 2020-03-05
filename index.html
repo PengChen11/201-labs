@@ -11,12 +11,13 @@
 <body>
     <header>
         <h1 id="main">Code Fellows class 201 labs</h1>
-        <h2 id="sub">created and maintenanced by Peng Chen</h2>
+        <h2 id="sub">Created and maintened by Peng Chen</h2>
+        <br>
         <div id="greeting">
-            <p>
+            <p style="float:right;">
                 <script>document.write( greetings() )</script>
             </p>
-            <p id="yourname"></p>
+            <p id="yourname" style="float:right;" ></p>
         </div>
     </header>
     <nav>
@@ -98,13 +99,60 @@
         <section id="jscode">
             <artical id=codeHere>
                 <section class="quiz">
-                    <p id="quizTitle">This is the section that we will play games!</p>
-                    <!-- <p id="quizNote">Please note: only "yes","no" or "y","n" are accepted.</p> -->
-                    <button onclick="quiz()">Click here to start the 5 "yes" or "no" questions games</button>
-                    <button onclick="numGuess()">Click here to guess the megic number in my head</button>
+                    <p id="quizTitle">This is the place that we will play guessing games!</p>
+                    <ul>
+                        <li>
+                            <p>
+                                Question 1:<br>
+                                Does the US has more land area than China?<br>
+                            </p>
+                            <button onclick="question1()">Click here to answer question 1.</button>
+                        </li>
+                        <li>
+                            <p>
+                                Question 2:<br>
+                                Will you stop buying corona beer due to the coronavirus?<br>
+                            </p>
+                            <button onclick="question2()">Click here to answer question 2.</button>
+                        </li>
+                        <li>
+                            <p>
+                                Question 3:<br>
+                                Do you think Apache attach helicopter an only fly 200 miles without refueling?
+                            </p>
+                            <button onclick="question3()">Click here to answer question 3.</button>
+                        </li>
+                        <li>
+                            <p>
+                                Question 4:<br>
+                                Do you think your stomach acid is strong enough to dissolve metal?<br>
+                            </p>
+                            <button onclick="question4()">Click here to answer question 4.</button>
+                        </li>
+                        <li>
+                            <p>
+                                Question 5:<br>
+                                Can you believe that golf has been played on the moon?<br>
+                            </p>
+                            <button onclick="question5()">Click here to answer question 5.</button>
+                        </li>
+                        <li>
+                            <p>
+                                Question 6:<br>
+                                The number guessing game!! I have a magic number in my mind, could you guess it?<br>
+                            </p>
+                            <button onclick="question6()">Click here to answer question 6.</button>
+                        </li>
+                        <li>
 
-                    <p id="answer"></p>
+                        </li>
+
+                    </ul>
+                    <!-- <p id="quizNote">Please note: only "yes","no" or "y","n" are accepted.</p> -->
+                    <button onclick="showMyscore()">Click here to see your total score.</button>
+                    <br>
                     <p id="numberGame"></p>
+                    <p id="answer"></p>
     
                 </section>
 
