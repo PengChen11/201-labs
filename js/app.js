@@ -66,7 +66,7 @@ function question2(){
 }
 
 function question3(){
-    var q3 = prompt ('Do you think Apache attach helicopter an only fly 200 miles without refueling?').toLowerCase();
+    var q3 = prompt ('Do you think Apache attach helicopter can only fly 200 miles without refueling?').toLowerCase();
     var a3 ;
     while (q3 !=='y' && q3 !== 'yes' && q3 !== 'n' && q3 !== 'no'){
         q3 = prompt ('Invalid input. Do you believe that Apache attack helicopter can only fly less than 200 miles without refueling?').toLowerCase();
@@ -136,6 +136,30 @@ function question6(){
             break;
         } else if (i===3){
             document.getElementById("numberGame").innerHTML = "Sorry, all 4 chances are used! The magic number in my head is 11, LOL!" + '<br>';
+        }
+    }
+}
+
+function question7(){
+    var bears1 = prompt('Please enter your 1st choice.');
+    var bears2 = prompt('Please enter your 2nd choice.');
+    for (var a=0; a<6 ; a++){
+        while (isNaN(bears1) || bears1 ==''){
+            bears1 = prompt('Just put the number for the answer! Please enter your 1st choice again.');
+        }
+        while (isNaN(bears2) || bears2 ==''){
+            bears2 = prompt('Just put the number for the answer! Please enter your 2nd choice again.');
+        }
+        var bears1Num = Number(bears1);
+        var bears2Num = Number(bears2);
+        var answer = [bears1Num, bears2Num];
+        if (answer[0] === 2 || answer[1] === 4){
+            score += 1;
+            alert('Awesome!! How do you know it?');
+            break;
+        } else {
+            bears1 = prompt ("Urrr, really? That's not the right answer. Please re-choose your 1st answer");
+            bears2 = prompt ("Urrr, really? That's not the right answer. Please re-choose your 2nd answer");
         }
     }
 }
