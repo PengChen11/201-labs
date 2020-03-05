@@ -119,6 +119,10 @@ article {
     text-align:justify;
     font-size: 16px;
 }
+.questionNum{
+    color: red;
+    
+}
 #quizNote {
     font-size: 15px;
 }

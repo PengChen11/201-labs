@@ -3,6 +3,7 @@
 var score = 0;
 var inputName;
 
+//This is the function to greeting you and put the greeting words in header
 
 function greetings(){
     var today = new Date();
@@ -22,19 +23,20 @@ function greetings(){
     return new_greeting;
 }
 
+//This is where it asks your name and put it down in the header part too
+
 function yourName(){
     var yourName = prompt('What is your name?');
     while (yourName == '') {
         yourName = prompt('What is your name?');
     }
-    inputName = 'Dear ' + yourName + '! ';
+    inputName = 'Hi ' + yourName + '! ';
     document.getElementById("yourname").innerHTML = inputName ;
 }
 
+//this is what happens when button 1 is clicked.
 
 function question1(){
-        // alert('You are about to play the guessing game! The first 5 questions will only take "yes", "y", "no" or "n" as the answer. ');
-    // this is question 1    
     var q1 = prompt('Does the US has more land area than China?').toLowerCase();
     var a1 ;
     while (q1 !=='y' && q1 !== 'yes' && q1 !== 'n' && q1 !== 'no'){
@@ -49,6 +51,8 @@ function question1(){
         score += 1;
     }
 }
+
+//this is what happens when button 2 is clicked.
 
 function question2(){
     var q2 = prompt ('Will you stop buying corona beer due to the coronavirus?').toLowerCase();
@@ -65,6 +69,8 @@ function question2(){
         score += 1;
     }
 }
+
+//this is what happens when button 3 is clicked.
 
 function question3(){
     var q3 = prompt ('Do you think Apache attach helicopter can only fly 200 miles without refueling?').toLowerCase();
@@ -83,6 +89,8 @@ function question3(){
 
 }
 
+//this is what happens when button 4 is clicked.
+
 function question4(){
     var q4 = prompt ('Do you think your stomach acid is strong enough to dissolve metal?').toLowerCase();
     var a4 ;
@@ -100,6 +108,8 @@ function question4(){
 
 }
 
+//this is what happens when button 5 is clicked.
+
 function question5(){
     var q5 = prompt ('Can you believe that golf has been played on the moon?').toLowerCase();
     var a5 ;
@@ -115,6 +125,8 @@ function question5(){
         alert (a5);
     }
 }
+
+//this is what happens when button 6 is clicked.
 
 function question6(){
     var guessNum = prompt("Please guess the magic number.");
@@ -141,6 +153,8 @@ function question6(){
     }
 }
 
+//this is what happens when button 7 is clicked.
+
 function question7(){
     var bears1 = prompt('Please enter your 1st choice.');
     var bears2 = prompt('Please enter your 2nd choice.');
@@ -154,24 +168,49 @@ function question7(){
         var bears1Num = Number(bears1);
         var bears2Num = Number(bears2);
         var answer = [bears1Num, bears2Num];
-        if (answer[0] === 2 || answer[1] === 4){
+        if ((answer[0] === 2 && answer[1] === 4) || (answer[0] === 4 && answer[1] === 2)){
             score += 1;
             alert('Awesome!! How do you know it?');
             break;
-        } else {
-            bears1 = prompt ("Urrr, really? That's not the right answer. Please re-choose your 1st answer");
-            bears2 = prompt ("Urrr, really? That's not the right answer. Please re-choose your 2nd answer");
+        } else if(a<5) {
+            bears1 = prompt ("Urrrr, please re-choose your 1st answer");
+            bears2 = prompt ("Urrr, really? Please re-choose your 2nd answer");
         }
     }
 }
 
-function showMyscore(){
-    document.getElementById("answer").innerHTML = inputName + 'Your final score is ' + Math.floor(score/7*100) +"%." + "<br>";
+//question8
+function question8(){
+    var rightAnswer = ['whales','dolphins','porpoises','walruses','manatees','seals'];
+    var attempts = 6;
+    loop1: for ( var i=0; i<attempts;i++){
+        var mammals = prompt('can you guess the mammals that live in the ocean?').toLowerCase();
+        loop2: for (var answerIndex = 0; answerIndex < rightAnswer.length; answerIndex++){
+            if(mammals === rightAnswer[answerIndex]){
+                alert('Great! you guessed it!');
+                score++;
+                break loop1;
+            }
+        }
+        if (i<attempts) alert("Really? That's an wrong Answer!");
+    }
 }
 
 
+//this is what happens when button 'get my score' is clicked.
 
-// function quiz(){
+function showMyscore(){
+    document.getElementById("answer").innerHTML = inputName + 'Your final score is ' + Math.floor(score/8*100) +"%." + "<br>";
+}
+
+function refresh(){
+    score = 0;
+    alert('The score is reset. You can run through the test again now.');
+    document.getElementById("answer").innerHTML = '';
+
+}
+
+
 //     var score =0;
 //     alert('You are about to play the guessing game! The first 5 questions will only take "yes", "y", "no" or "n" as the answer. ');
 //     // this is question 1
@@ -276,13 +315,4 @@ function showMyscore(){
 //                 document.getElementById("numberGame").innerHTML = "Sorry, all 4 chances are used! The magic number in my head is 11, LOL!" + '<br>';
 //             }
 //         }
-//         // while (mutilCho !== 'done'){
-//         //     var mutilCho=prompt('Polar bears are sometime lonely, hard to find another polar bear to mate with. So, from the following list, what do you think the polar bear have been mating with?  A. a human.   B. another polar bear.  C. a tree hole.  D. grizzlies.  Input "done" when finished.' ).toLowerCase();
-//         //     var yourAns = [mutilCho[i]]
-//         // }
-//         // var myAnswer = ['b','d'];
-//         // for (var a=0; a<6; a++){
-//         //     while
-//         // }
 //     document.getElementById("answer").innerHTML = 'Your final score is ' + Math.floor(score/7*100) +"%." + "<br>";
-// }

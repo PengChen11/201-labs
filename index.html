@@ -84,16 +84,36 @@
                 </p>
                 <p class="top10">My top 10 favorite movies</p>
                 <ul class="top10">
-                    <li>黑客帝国</li>
-                    <li>玩具总动员</li>
-                    <li>独立日</li>
-                    <li>银河系漫游指南</li>
-                    <li>功夫熊猫</li>
-                    <li>幻影1408凶间</li>
-                    <li>啦啦啦</li>
-                    <li>嘿嘿嘿</li>
-                    <li>啥啥啥</li>
-                    <li>不知道</li>
+                    <li>
+                        <a href="https://www.pangzitv.com/vod-play-id-26090-src-1-num-1.html" target="_blank">The Matrix</a>
+                    </li>
+                    <li>
+                        <a href="https://www.pangzitv.com/vod-play-id-26091-src-1-num-1.html" target="_blank">The Matrix - Reload</a>
+                    </li>
+                    <li>
+                        <a href="https://www.pangzitv.com/vod-play-id-16009-src-1-num-1.html" target="_blank">The Matrix - Revolutions</a>
+                    </li>
+                    <li>
+                        <a href="https://www.pangzitv.com/vod-play-id-22007-src-1-num-1.html" traget="_blank">Inception</a>
+                    </li>
+                    <li>
+                        <a href="https://www.pangzitv.com/vod-play-id-24169-src-1-num-1.html" target="_blank">Interstellar</a>
+                    </li>
+                    <li>
+                        <a href="https://www.pangzitv.com/vod-play-id-34744-src-1-num-1.html" target="_blank">The Andromeda Strain</a>
+                    </li>
+                    <li>
+                        <a href="https://www.pangzitv.com/vod-play-id-13790-src-1-num-1.html" target="_blank">Jurassic World</a>
+                    </li>
+                    <li>
+                        <a href="https://www.pangzitv.com/vod-play-id-33692-src-1-num-1.html" traget="_blank">American Pie</a>
+                    </li>
+                    <li>
+                        <a href="https://www.pangzitv.com/vod-play-id-43650-src-1-num-1.html" target="_blank">1408</a>
+                    </li>
+                    <li>
+                        <a href="https://www.pangzitv.com/vod-play-id-11420-src-1-num-1.html" target="_blank">Now You See Me</a>
+                    </li>
                 </ul>
             </artical>
         </section>
@@ -103,50 +123,64 @@
                     <p id="quizTitle">This is the where we gonna play guessing games!</p>
                     <ul id="questions">
                         <li>
-                            <p>
+                            <p class="questionNum">
                                 Question 1:<br>
+                            </p>
+                            <p>
                                 Does the US has more land area than China?<br>
                             </p>
                             <button onclick="question1()">Click here to answer question 1.</button>
                         </li>
                         <li>
-                            <p>
+                            <p class="questionNum">
                                 Question 2:<br>
+                            </P>
+                            <p>
                                 Will you stop buying corona beer due to the coronavirus?<br>
                             </p>
                             <button onclick="question2()">Click here to answer question 2.</button>
                         </li>
                         <li>
-                            <p>
+                            <p class="questionNum">
                                 Question 3:<br>
+                            </p>
+                            <p>
                                 Do you think Apache attach helicopter can only fly 200 miles without refueling?
                             </p>
                             <button onclick="question3()">Click here to answer question 3.</button>
                         </li>
                         <li>
-                            <p>
+                            <p class="questionNum">
                                 Question 4:<br>
+                            </p>
+                            <p>
                                 Do you think your stomach acid is strong enough to dissolve metal?<br>
                             </p>
                             <button onclick="question4()">Click here to answer question 4.</button>
                         </li>
                         <li>
-                            <p>
+                            <p class="questionNum">
                                 Question 5:<br>
+                            </p>
+                            <p>
                                 Can you believe that golf has been played on the moon?<br>
                             </p>
                             <button onclick="question5()">Click here to answer question 5.</button>
                         </li>
                         <li>
-                            <p>
+                            <p class="questionNum">
                                 Question 6:<br>
+                            </p>
+                            <p>
                                 The number guessing game!! I have a magic number in my mind, could you guess it?<br>
                             </p>
                             <button onclick="question6()">Click here to answer question 6.</button>
                         </li>
                         <li>
-                            <p>
+                            <p class="questionNum">
                                 Question 7:<br>
+                            </p>
+                            <p>
                                 Polar bears are sometime lonely, hard to find another polar bear to mate with. So, from the 
                                 following list, what do you think the polar bear have been mating with?<br>
                                 Only 2 of the following answers are correct!<br>
@@ -155,14 +189,25 @@
                                 3. a tree hole<br>
                                 4. grizzlies<br> 
                                 5. sea lions<br>
-                                6. black bear<br>
+                                6. black bear<br>   
                             </p>
                             <button onclick="question7()">Click here to give your choices.</button>
                             <!-- <button onclick="question7_2()">Click here to give your  2nd choice.</button> -->
                         </li>
+                        <li>
+                            <p class="questionNum">
+                                Question 8:<br>
+                            </p>
+                            <p>
+                                can you guess the mammals that live in the ocean?
+                            </p>
+                            <button onclick="question8()">Click here to input your guess.</button>
+                        </li>
                     </ul>
                     <br>
                     <button onclick="showMyscore()" style="color:red;">Click here to see your total score.</button>
+                    <button onclick="refresh()" style="color:red;">Click here to refresh score.</button>
+
                     <br>
                     <p id="numberGame"></p>
                     <p id="answer"></p>
