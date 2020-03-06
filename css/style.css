@@ -3,10 +3,11 @@ body {
     background-color: rgb(198, 206, 206);
 }
 #top {
-    /* position: fixed; */
+    position: fixed;
     width:100%;
     height: 170px;
     background-color: lightgray;
+    top: 0;
 
 }
 header {
@@ -43,15 +44,18 @@ nav {
     width:30%;
     padding-left: 50px;
 }
+
+
 #mainbody {
-    display: inline-block;
-    /* margin-top: 180px; */
+    /* display: inline-block; */
+    margin-top: 170px;
 }
+
 
 #bio{
     border: brown20px solid;
-    width:60%;
-    float: left;
+    width:50%;
+    display:inline-block;
 
 }
 
@@ -95,7 +99,10 @@ article {
 
 #jscode {
     width:40%;
-    margin-left: 60%;
+    /* margin-left: 60%; */
+    display:inline-block;
+    /* height:auto; */
+    vertical-align: top;
 }
 #codeHere {
     padding-right: 10%;
@@ -105,7 +112,7 @@ article {
     color: rgb(77, 74, 74);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.7em;
-    width:90%;
+    /* width:90%; */
 
 
 }
@@ -115,7 +122,7 @@ article {
     
 }
 #questions {
-    width:90%;
+    /* width:90%; */
     text-align:justify;
     font-size: 16px;
 }
@@ -137,17 +144,18 @@ button {
 #answer {
     font-size: 25px;
     color: rgb(114, 3, 3);
-    width:80%;
+    /* width:80%; */
     line-height: 1.7em;
 
 }
 #numberGame{
     font-size:15px;
-    width:80%;
+    /* width:80%; */
     color:rgb(77,74,74);
 }
 
 footer {
+    position: ;
     height: 100px;
     background-color: lightgray;
     padding-left: 50px;
